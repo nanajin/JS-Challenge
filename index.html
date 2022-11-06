@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="box">
+        <div class="date">
+          <h1 class="now"></h1>
+          <h1 class="clock"></h1>
+        </div>
+        <div class="weatherPrint">
+          <p id="city"></p>
+          <p id="weather"></p>
+        </div>
+        <div class="no-login">
+          <h1>Welcome <br/> Friend! <br/> I wish you all the best!</h1>
+        </div>
+        <div class="logout"><button>LOGOUT</button></div>
+      </div>
+      
+      <form class="signUp">
+        <h3>Sign Up</h3>
+        <input type="text" id="signUpId" placeholder="ID" required/>
+        <br/>
+        <input type="password" id="signUpPwd" placeholder="PASSWORD" required/>
+        <br/>
+        <button>Sign Up</button>
+      </form>
+      <form class="login">
+        <h3>Login</h3>
+        <input type="text" id="id" placeholder="ID" required/>
+        <br/>
+        <input type="password" id="pwd" placeholder="PASSWORD" required/>
+        <br/>
+        <button>Login</button>
+      </form>
+      <div class="loginSuccess">
+        <div class="list">
+          <h1>📋TO DO LIST</h1>
+          <ul></ul>
+        </div>
+        <div class="todolist">
+          <h1></h1>
+          <form>
+            <input type="text" placeholder="Fill your To Do List" required/>
+            <button>Enter</button>
+          </form>
+        </div>
+      </div>
+      <div class="back-img"></div>
+  </div>
+    <script src="src/background.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/todolist.js"></script>
+  </body>
+</html>

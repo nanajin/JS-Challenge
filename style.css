@@ -1,0 +1,161 @@
+.main{
+  position: relative;
+  font-family: 'Jua', sans-serif;
+}
+.date, .weatherPrint, .todolist{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%);
+  z-index: 1;
+  width: 300px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1em;
+  border: 2px solid;
+}
+.clock, .now{
+  color: black;
+  font-size: 30px;
+}
+.no-login{
+  font-size: 15px;
+  color: blueviolet;
+}
+.signUp, .login{
+  position: absolute;
+  top: 50%;
+  transform: translate(20%, 90%);
+  z-index: 1;
+  width: 25%;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.signUp h3, .login h3{
+  font-size: 30px;
+  text-align: center;
+}
+.signUp input, .login input{
+  padding: 8px;
+  width: 80%;
+  margin: 5px;
+  margin-left: 30px;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+.signUp button, .login button{
+  font-weight: bold;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid lightpink;
+  border-radius: 1em;
+  margin-left: 40%;
+}
+.signUp button:hover, .login button:hover, .todolist form button:hover{
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  background-color: black;
+  color: aliceblue;
+  border: black;
+}
+.login{
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+}
+li{
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid;
+  margin: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  text-align: start;
+  width: 85%;
+  word-break: break-all;
+}
+li button{
+  border: 1px solid;
+  border-radius: 0.5em;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+}
+li button:hover, .logout button:hover{
+  color: white;
+  background-color: red;
+  transition: all 0.2s ease;
+  border: 1px solid red;
+}
+.todolist, .no-login{
+  left: 80%;
+  margin-left: 7px;
+  margin-top: 430px;
+}
+.todolist form input{
+  padding: 5px;
+  border-radius: 1em;
+}
+.todolist form button{
+  padding: 5px;
+  font-weight: bold;
+  border: 2px solid lightpink;
+  border-radius: 1em;
+}
+.logout button{
+  position: absolute;
+  z-index: 1;
+  border-radius: 0.5em;
+  background-color: black;
+  color: white;
+  font-size: bold;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 3%;
+}
+.weatherPrint{
+  margin-top: 200px;
+}
+#city{
+  font-weight: bold;
+  font-size: 30px;
+}
+#weather{
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+}
+.loginSuccess .list, .box{
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  width: 30vw;
+  height: 90vh;
+  border: 1px solid;
+  border-radius: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.box{
+  left: 65%;
+}
+img{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 49%;
+  top: 50%;
+  transform: translate(-50%, -1%);
+}
